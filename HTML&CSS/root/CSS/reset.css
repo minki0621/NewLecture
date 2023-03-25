@@ -8,3 +8,7 @@ div[class$="-con"] {
   margin-left: auto;
   margin-right: auto;
 }
+
+li {
+  list-style: none;
+}

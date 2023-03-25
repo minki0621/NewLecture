@@ -9,36 +9,38 @@
 </head>
 
 <body>
+  <div class="seach-a"> <!-- 검색 A타입 필드-->
+    <label for="search">Search</label>
+    <input type="text" id="search" value="Search" autofocus>
+    <button type="submit">Icons/Icon search</button>
+  </div>
   <!---------------------------header box --------------------------------------------------------------------------------->
   <header id="header"> <!-- header 전체 필드 -->
     <div class="header-con"> <!--header 컨텐츠 필드 1+2-->
       <div class="header-con-1"> <!-- header 컨텐츠 필드 1-->
-        <div class="header-con-1-logo"> <!-- 1. 로고 필드-->
+        <div class="header-con-1-1-logo"> <!-- 1. 로고 필드-->
           <h1><a href="https://ed.ted.com/lessons?direction=desc&sort=featured-position&user_by_click=student">TED-Ed</a></h1>
         </div>
-        <div class="header-con-1-search"><!-- 2. 검색 A,B 필드-->      
-          <div class="seach-a"> <!-- 검색 A타입 필드-->
-            <label for="search">Search</label>
-            <input type="text" id="search" value="Search" autofocus>
-            <button type="submit">Icons/Icon search</button>
+        <div class="header-con-1-2-searchNlogin"> <!--오른쪽에 있을 서치와 로그인 필드-->
+          <div class="header-con-1-2-1-search"> <!-- 1.B 필드-->      
+            <div class="seach-b"> <!-- 검색 B타입 필드-->
+              <fieldset>
+                <legend>검색 입력 필드</legend>
+                <label>검색 분류</label>
+                <select> <!--https://developer.mozilla.org/ko/docs/Web/HTML/Element/select-->
+                  <option value="title">제목</option>
+                  <option value="writer">작성자</option>
+                  <option value="content">내용</option>
+                  <option value="date">작성년도</option>
+                </select>
+                  <input type="text" placeholder="입력하시오">
+                  <input type="submit" value="검색">
+              </fieldset>
+            </div>
           </div>
-          <div class="seach-b"> <!-- 검색 B타입 필드-->
-            <fieldset>
-              <legend>검색 입력 필드</legend>
-              <label>검색 분류</label>
-              <select> <!--https://developer.mozilla.org/ko/docs/Web/HTML/Element/select-->
-                <option value="title">제목</option>
-                <option value="writer">작성자</option>
-                <option value="content">내용</option>
-                <option value="date">작성년도</option>
-              </select>
-                <input type="text" placeholder="입력하시오">
-                <input type="submit" value="검색">
-            </fieldset>
+          <div class="header-con-1-2-2-login"> <!-- 3. 회원가입 로그인 필드-->
+            <a href="https://auth.ted.com/users/new?referrer=https%3A%2F%2Fauth.ted.com%2Fmultipass%2Fauth%2Fteded%3Fcallback%3Dhttps%3A%2F%2Fed.ted.com%2Fsessions%2Fcallback" target="_top">Register</a> or <a href="https://auth.ted.com/session/new" target="_top">Sign in</a>
           </div>
-        </div>
-        <div class="header-con-1-login"> <!-- 3. 회원가입 로그인 필드-->
-          <a href="https://auth.ted.com/users/new?referrer=https%3A%2F%2Fauth.ted.com%2Fmultipass%2Fauth%2Fteded%3Fcallback%3Dhttps%3A%2F%2Fed.ted.com%2Fsessions%2Fcallback" target="_top">Register</a> or <a href="https://auth.ted.com/session/new" target="_top">Sign in</a>
         </div>
       </div>
       <div class="header-con-2"> <!--header 컨텐츠 필드 2-->
@@ -94,14 +96,13 @@
     <div class="main-con"> <!-- main 컨텐츠 필드-->
       <div class="main-con-1-pics"> <!-- main 1 -->
         <a href="https://www.ted.com/talks?language=ko" target="_blank">
-          <img src="./img/TED1.jpg" alt="TED adult 바로가기" height="150px" width="250px"></a>
+        <img src="./img/TED1.jpg" alt="TED adult 바로가기" height="150px" width="250px"></a>
         <img src="../root/img/TED2.jpg" alt="2번째 테드" height="150px" width="250px">
         <img src="./img/TED3.jpg" alt="3번째 테드" height="150px" width="250px">
         <img src="./img/TED4.jpg" alt="4번째 테드" height="150px" width="250px">
       </div>
-      <div class="mian-con-2-pagemove"><!-- main 2-->
-        <nav> <!-- 페이지 이동-->
-          <ul>
+        <nav > <!-- 페이지 이동-->
+          <ul class="main-pagemove">
             <li><a href="https://ed.ted.com/lessons.html?direction=desc&sort=featured-position&user_by_click=student">1</a></li>
             <li><a href="https://ed.ted.com/lessons.html?direction=desc&page=2&sort=featured-position&user_by_click=student">2</a></li>
             <li><a href="https://ed.ted.com/lessons.html?direction=desc&page=3&sort=featured-position&user_by_click=student">3</a></li>
@@ -139,7 +140,7 @@
           </fieldset> 
         </div>
         <div class="footer-con-2-contract"> <!-- 2-2 하 약관-->
-          By subcsribing, you agree to our <a href="https://www.ted.com/termsofuse" target="_black">Terms of use</a><br>and <a href="https://www.ted.com/privacy" target="_blank">Privacy policy.</a>
+          By subcsribing, you agree to our <a href="https://www.ted.com/termsofuse" target="_black">Terms of use</a>and <a href="https://www.ted.com/privacy" target="_blank">Privacy policy.</a>
         </div>
       </div>
     </div>
